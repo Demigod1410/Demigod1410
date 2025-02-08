@@ -42,7 +42,7 @@ const RecentProjects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="www.linkedin.com/in/daksh-rana-dev"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
@@ -87,7 +87,7 @@ const RecentProjects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="www.linkedin.com/in/daksh-rana-dev"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
@@ -120,13 +120,13 @@ const RecentProjects = () => {
               A game that takes you to the space and beyond
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
-            <iframe className="rounded-2xl" width={430} height={275} src="https://www.youtube.com/embed/smPZiGMWfpA?autoplay=1" allow="autoplay"></iframe>
+            <iframe className="rounded-2xl" width={430} height={275} src="https://www.youtube.com/embed/smPZiGMWfpA?autoplay=1&loop=1&playlist=smPZiGMWfpA" ></iframe>
             </CardItem>
             <div className="flex justify-between items-center mt-20">
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="www.linkedin.com/in/daksh-rana-dev"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
