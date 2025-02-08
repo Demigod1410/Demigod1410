@@ -4,9 +4,11 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
+
 const RecentProjects = () => {
   return (
     <div className='py-20'>
+      
       <h1 className='heading text-zinc-300'>
         A small section of {''}
         <span className='text-purple'>Recent Projects</span>
@@ -29,7 +31,7 @@ const RecentProjects = () => {
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src="/car2.jpg"
+                src="/zeniski.png"
                 height="1000"
                 width="1000"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -63,14 +65,14 @@ const RecentProjects = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              Career Call
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              A platform that connects you with the right career guidance
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
@@ -108,22 +110,23 @@ const RecentProjects = () => {
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
             >
-              Make things float in air
+              SpaceLord
             </CardItem>
             <CardItem
               as="p"
               translateZ="60"
               className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
             >
-              Hover over this card to unleash the power of CSS perspective
+              A game that takes you to the space and beyond
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
-              <Image
-                src="/car2.jpg"
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt="thumbnail"
+              <video
+                src="/spacelord.mp4"
+                className="w-full h-60 object-cover rounded-xl group-hover/card:shadow-xl"
+                loop
+                muted
+                autoPlay
+                playsInline
               />
             </CardItem>
             <div className="flex justify-between items-center mt-20">
@@ -147,10 +150,8 @@ const RecentProjects = () => {
           </CardBody>
         </CardContainer>
       </div>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default RecentProjects
+export default RecentProjects;

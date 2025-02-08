@@ -3,6 +3,8 @@ import React from "react";
 import { Boxes } from "@/components/ui/background-boxes";
 import TypeWriter from "@/components/ui/typewriter-effect";
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
+
 
 
 
@@ -31,10 +33,14 @@ export function HeroSection() {
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <Button className="w-40 h-15 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm z-20">
-            Download CV
+            <Link href="/Daksh-Rana-Resume.pdf" download target="_blank"> 
+              Download CV
+            </Link>
           </Button>
           <Button className="w-40 h-15 rounded-xl bg-white text-black border border-black  text-sm z-20">
-            Contact Me
+          <Link href="https://www.linkedin.com/in/daksh-rana-dev/" target="_blank"> 
+            Connect with me
+            </Link>
           </Button>
         </div>
       </div>
