@@ -120,14 +120,7 @@ const RecentProjects = () => {
               A game that takes you to the space and beyond
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
-              <video
-                src="/spacelord.mp4"
-                className="w-full h-60 object-cover rounded-xl group-hover/card:shadow-xl"
-                loop
-                muted
-                autoPlay
-                playsInline
-              />
+            <iframe className="rounded-2xl" width={430} height={275} src="https://www.youtube.com/embed/smPZiGMWfpA?autoplay=1" allow="autoplay"></iframe>
             </CardItem>
             <div className="flex justify-between items-center mt-20">
               <CardItem
