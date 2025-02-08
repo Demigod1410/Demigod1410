@@ -42,11 +42,11 @@ const RecentProjects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="www.linkedin.com/in/daksh-rana-dev"
+                href="https://github.com/Demigod1410/zeniski"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                View Project →
               </CardItem>
               <CardItem
                 translateZ={20}
@@ -87,11 +87,11 @@ const RecentProjects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="www.linkedin.com/in/daksh-rana-dev"
+                href="https://github.com/nandiniiiiiiii/CareerCall"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                View Project →
               </CardItem>
               <CardItem
                 translateZ={20}
@@ -126,11 +126,11 @@ const RecentProjects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="www.linkedin.com/in/daksh-rana-dev"
+                href="https://github.com/Demigod1410/SpaceLord"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
-                Try now →
+                View Project →
               </CardItem>
               <CardItem
                 translateZ={20}
