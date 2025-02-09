@@ -25,8 +25,8 @@ export function HeroSection() {
             />
           </h2>
           <p className="text-center mt-1 text-neutral-200 relative z-20 my-20 sm:text-lg">
-            I&apos;m an aspiring full-stack web developer passionate about creating
-            stylish, efficient, and interactive websites. With expertise in Blender, Figma, JavaScript,
+            I&apos;m an aspiring Web Developer and Indie Game Developer passionate about creating
+            stylish, efficient, and interactive websites and games. With expertise in Blender, Figma, Unity, JavaScript,
             and C#, I craft engaging digital experiences that blend design and functionality seamlessly.
           </p>
         </div>
