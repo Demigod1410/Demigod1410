@@ -19,7 +19,7 @@ const TechStack = () => {
 
 
     return (
-        <div className='flex justify-center items-center p-4 sm:mb-0' style={{ height: 'calc(100vh + 4rem)', backgroundImage: 'url(/bg2.png)', backgroundSize: 'cover', backgroundPosition: 'center', border: '10px solid transparent', borderColor: 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)) 1' }}>
+        <div className='flex justify-center items-center p-4 sm:mb-0' style={{ height: 'calc(100vh + 4rem)', backgroundImage: 'url(/bg2.png)', backgroundSize: 'cover', backgroundPosition: 'center',}}>
             <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
             <div className='relative text-center'>
                 <h1 className='text-white text-3xl sm:text-5xl font-bold mb-12 mt-0 sm:mt-0'>👨‍💻 Tech Stack</h1>
