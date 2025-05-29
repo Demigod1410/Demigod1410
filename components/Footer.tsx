@@ -60,60 +60,70 @@ const Footer: React.FC = () => {
     }
 
     return (
-        <footer className="bg-gray-800 text-white py-8">
-            <div className="container mx-auto px-4 max-w-2xl">
-                <h2 className="text-2xl font-bold mb-4">Connect with Me</h2>
-                <form className="space-y-4" onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="name" className="block text-sm font-medium">
-                            Name
-                        </label>
-                        <input
-                            type="text"
-                            id="name"
-                            value={formState.name}
-                            onChange={handleChange}
-                            className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                            required
-                        />
+        <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-slate-900/60">
+            {/* Background grid and mask */}
+            <div className="absolute inset-0 w-full h-full bg-grid-white/[0.02] bg-grid-8" />
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+            <div className="absolute w-full h-full bg-slate-900 [mask-image:radial-gradient(transparent,white)] pointer-events-none opacity-50" />
+
+            {/* Content */}
+            <div className="relative z-10 w-full p-8">
+                <footer className="bg-gray-800 text-white py-8">
+                    <div className="container mx-auto px-4 max-w-2xl">
+                        <h2 className="text-2xl font-bold mb-4">Connect with Me</h2>
+                        <form className="space-y-4" onSubmit={handleSubmit}>
+                            <div>
+                                <label htmlFor="name" className="block text-sm font-medium">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    value={formState.name}
+                                    onChange={handleChange}
+                                    className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="email" className="block text-sm font-medium">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    value={formState.email}
+                                    onChange={handleChange}
+                                    className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="message" className="block text-sm font-medium">
+                                    Message
+                                </label>
+                                <textarea
+                                    id="message"
+                                    value={formState.message}
+                                    onChange={handleChange}
+                                    className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    rows={4}
+                                    required
+                                ></textarea>
+                            </div>
+                            <div>
+                                <button
+                                    type="submit"
+                                    className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                >
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={formState.email}
-                            onChange={handleChange}
-                            className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="message" className="block text-sm font-medium">
-                            Message
-                        </label>
-                        <textarea
-                            id="message"
-                            value={formState.message}
-                            onChange={handleChange}
-                            className="mt-1 block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                            rows={4}
-                            required
-                        ></textarea>
-                    </div>
-                    <div>
-                        <button
-                            type="submit"
-                            className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                </form>
+                </footer>
             </div>
-        </footer>
+        </div>
     );
 };
 

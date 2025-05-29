@@ -16,12 +16,13 @@ const shadcnIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubho
 
 const TechStack = () => {
 
-
-
     return (
-        <div className='flex justify-center items-center p-4 sm:mb-0' style={{ height: 'calc(100vh + 4rem)', backgroundImage: 'url(/bg2.png)', backgroundSize: 'cover', backgroundPosition: 'center',}}>
-            <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-            <div className='relative text-center'>
+        <div className="relative h-screen flex justify-center items-center overflow-hidden bg-slate-900/60">
+            {/* Background grid and mask */}
+            <div className="absolute inset-0 w-full h-full bg-grid-white/[0.02] bg-grid-8" />
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+            <div className="absolute w-full h-full bg-slate-900 [mask-image:radial-gradient(transparent,white)] pointer-events-none opacity-50" />
+            <div className='relative z-10 text-center'>
                 <h1 className='text-white text-3xl sm:text-5xl font-bold mb-12 mt-0 sm:mt-0'>👨‍💻 Tech Stack</h1>
                 <div className='grid grid-cols-2 sm:grid-cols-4 gap-x-5 gap-y-2'>
                     <TranslucentTab content="HTML" icon={htmlIcon} link="https://developer.mozilla.org/en-US/docs/Web/HTML" size="px-10 py-5 border col-span-1" />
