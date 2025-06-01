@@ -108,20 +108,21 @@ export function HeroSection() {
             whileTap={{ scale: 0.95 }}
             className="relative group"
           >
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-            <Button className="relative w-44 h-12 rounded-xl bg-black/30 backdrop-blur-sm border-0 text-white text-sm z-20 transition-all duration-500 group-hover:bg-black/50 group-hover:shadow-[0_0_2rem_-0.5rem_#8b5cf6] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <Link href="/DAKSH_RANA_RESUME_2025.pdf" download target="_blank" className="flex items-center gap-2"> 
-                Download CV
-                <motion.span
-                  initial={{ x: -10, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  ⬇️
-                </motion.span>
-              </Link>
-            </Button>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>            <Link href="/DAKSH_RANA_RESUME_2025.pdf" download>
+              <Button className="relative w-44 h-12 rounded-xl bg-black/30 backdrop-blur-sm border-0 text-white text-sm z-20 transition-all duration-500 group-hover:bg-black/50 group-hover:shadow-[0_0_2rem_-0.5rem_#8b5cf6] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="flex items-center gap-2">
+                  Download CV
+                  <motion.span
+                    initial={{ x: -10, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    ⬇️
+                  </motion.span>
+                </div>
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div
@@ -129,20 +130,21 @@ export function HeroSection() {
             whileTap={{ scale: 0.95 }}
             className="relative group"
           >
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-            <Button className="relative w-44 h-12 rounded-xl bg-white/10 backdrop-blur-sm border-0 text-white text-sm z-20 transition-all duration-500 group-hover:bg-white/20 group-hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <Link href="https://www.linkedin.com/in/daksh-rana-dev/" target="_blank" className="flex items-center gap-2"> 
-                Connect with me
-                <motion.span
-                  initial={{ x: -10, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.2 }}
-                >
-                  →
-                </motion.span>
-              </Link>
-            </Button>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>            <Link href="https://www.linkedin.com/in/daksh-rana-dev/" target="_blank">
+              <Button className="relative w-44 h-12 rounded-xl bg-white/10 backdrop-blur-sm border-0 text-white text-sm z-20 transition-all duration-500 group-hover:bg-white/20 group-hover:shadow-[0_0_2rem_-0.5rem_#3b82f6] overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="flex items-center gap-2">
+                  Connect with me
+                  <motion.span
+                    initial={{ x: -10, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    →
+                  </motion.span>
+                </div>
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
