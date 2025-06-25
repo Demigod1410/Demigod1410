@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-3">Follow Us</h3>{" "}
+              <h3 className="text-lg font-semibold mb-3">Follow Me</h3>{" "}
               <div className="flex gap-4">
                 <Link
                   href="https://twitter.com/"
@@ -133,7 +133,7 @@ export default function Footer() {
                   href="#"
                   className="text-slate-300 hover:text-primary transition-colors"
                 >
-                  About Us
+                  About Me
                 </Link>
               </li>
               <li>
