@@ -1,17 +1,19 @@
 import React from 'react';
 import TranslucentTab from './ui/translucentTabs';
-const htmlIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/html.svg';
-const jsIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/javascript.svg';
-const cssIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/css.svg';
-const reactIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/react.svg';
-const nodeIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/node.svg';
-const twIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/tailwind.svg';
-const gitIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/git.svg';
-const tsIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/typescript.svg';
-const nextIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/nextjs.svg';
-const figmaIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/figma.svg';
-const ghIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/github.svg';
-const shadcnIcon = 'https://raw.githubusercontent.com/shubhojit-mitra-dev/shubhojit-mitra-dev/a5a6b834138df6378d5d24003327a85304e6d268/src/assets/shadcn.svg';
+
+// Using local SVG files from the public directory
+const htmlIcon = '/HTML5.svg';
+const jsIcon = '/JavaScript.svg';
+const cssIcon = '/CSS3.svg';
+const reactIcon = '/React.svg';
+const nodeIcon = '/Node.js.svg';
+const twIcon = '/Tailwind CSS.svg';
+const gitIcon = '/Git.svg';
+const tsIcon = '/TypeScript.svg';
+const nextIcon = '/Next.js.svg';
+const figmaIcon = '/Figma.svg';
+const ghIcon = '/GitHub.svg';
+const shadcnIcon = '/shadcn-ui.png';
 
 
 const TechStack = () => {
